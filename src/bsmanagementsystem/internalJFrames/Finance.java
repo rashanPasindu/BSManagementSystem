@@ -5,6 +5,8 @@
  */
 package bsmanagementsystem.internalJFrames;
 
+import classes.financial.financialposition;
+import classes.financial.incomestatement;
 import javax.swing.JOptionPane;
 
 /**
@@ -157,23 +159,28 @@ public class Finance extends javax.swing.JInternalFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         int n;
+        incomestatement income = new incomestatement();
 
         n = chkQuater();
 
         if (n == 0){
-
+            //show the relevant report
+            income.initiate(title, title);
         }
         else if (n == 1){
             //show the relevant report
+            income.initiate(title, title);
         }
         else if (n == 2){
-
+            //show the relevant report
+             income.initiate(title, title);
         }
         else if (n== 3){
-
+            income.initiate(title, title);
+             //show the relevant report
         }
         else{
-            
+            //show error message
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -181,20 +188,25 @@ public class Finance extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         int n;
+        financialposition finpo = new financialposition();
 
         n = chkQuater();
 
         if (n == 0){
-
+            finpo.initiate(title, title);
+            //show the relevant report
         }
         else if (n == 1){
+            finpo.initiate(title, title);
             //show the relevant report
         }
         else if (n == 2){
-
+            finpo.initiate(title, title);
+            //show the relevant report
         }
         else if (n== 3){
-
+            finpo.initiate(title, title);
+            //show the relevant report
         }
         else{
             

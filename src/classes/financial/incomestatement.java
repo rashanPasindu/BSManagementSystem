@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -25,8 +26,8 @@ public class incomestatement {
     
     float incomeTotal = 0; //done_coding_method
     float salesTotal =0; //done_coding_method
-    float disReceivedTotal = 0;
-    float otherIncomesTotal = 0;
+    float disReceivedTotal = 0; 
+    float otherIncomesTotal = 0; //done_coding_method
     
     float expTotal = 0; //done_coding_method
     float adminExpTotal = 0; //done_coding_method
@@ -39,8 +40,73 @@ public class incomestatement {
     float profitAfterTax = 0; //done_coding_method
     float taxTotal = 0; //done_coding_method
     
+    String date;
     
+    public boolean initiate(String start, String end){
+        boolean chk1,chk2;
+        assignValues(start,end);
+        chk1=sendtoDB(salesTotal,otherIncomesTotal,disReceivedTotal,adminExpTotal,maintExpTotal,pettyExpTotal,otherExpTotal,disAllowedTotal,date);
+        chk2=sendtoDB1(incomeTotal,expTotal,profitBeforeTax,taxTotal,profitAfterTax,date);
     
+       if (chk1==true && chk2==true){
+       return true;
+        }
+       else{
+       System.out.println("Error");
+       return false;
+   }
+    
+    }
+    
+   private void assignValues(String start, String end){
+        
+        salesTotal = Float.parseFloat(getSalesTotal(start,end));
+        adminExpTotal = Float.parseFloat(getAdminExpTotal(start,end));
+        maintExpTotal = Float.parseFloat(getmaintExpTotal(start,end));
+        pettyExpTotal = Float.parseFloat(getpettyExpTotal(start,end));
+        otherExpTotal = Float.parseFloat(getotherExpTotal(start,end));
+        taxTotal = Float.parseFloat(gettaxTotal(start,end));
+        disAllowedTotal = Float.parseFloat(disAllowedTOT(start,end));
+        otherIncomesTotal=getOtherIncomes(start,end);
+        disReceivedTotal=disReceivedToT(start,end);
+        
+        date=getCurrentDate();
+     
+    }
+   
+   private boolean sendtoDB(float salesTOT,float otherIncomes,float discountsR, float adminExp,float MaintExp, float PettyExp, float OtherExp, float discountsA, String date){
+       
+       con = DBconnect.connect();
+       
+       try{
+           String sql = "INSERT INTO `incomestatevalues` (`Sales_Total`,`Other_Incomes`,`Discounts_Received`,`Admin_Exp_Total`,`Maint_Exp_Total`,`Petty_Exp_Total`,`Other_Exp_Total`,`Discounts_Allowed`,`Date`)VALUES ('"+salesTOT+"','"+otherIncomes+"','"+discountsR+"','"+adminExp+"','"+MaintExp+"','"+PettyExp+"','"+OtherExp+"','"+discountsA+"','"+date+"');";
+           pst = con.prepareStatement(sql);
+           pst.execute();
+           System.out.println("Successful");
+           return true;
+       }
+       catch(Exception e){
+           System.out.println(e);
+           return false;
+       }   
+   }
+   
+     private boolean sendtoDB1(float incomeTOT,float ExpenseTOT,float PBT, float Tax,float PAT, String date){
+       
+       con = DBconnect.connect();
+       
+       try{
+           String sql = "INSERT INTO `incomestatefinal` (`income_Total`,`Expense_Total`,`PBT`,`Tax`,`PAT`,`Date`)VALUES ('"+incomeTOT+"','"+ExpenseTOT+"','"+PBT+"','"+Tax+"','"+PAT+"','"+date+"');";
+           pst = con.prepareStatement(sql);
+           pst.execute();
+           System.out.println("Successful");
+           return true;
+       }
+       catch(Exception e){
+           System.out.println(e);
+           return false;
+       }   
+   }
     
     private void calculatePBT(){
         
@@ -83,19 +149,7 @@ public class incomestatement {
         }  
     }
     
-    public void assignValues(String start, String end){
-        
-        salesTotal = Float.parseFloat(getSalesTotal(start,end));
-        adminExpTotal = Float.parseFloat(getAdminExpTotal(start,end));
-        maintExpTotal = Float.parseFloat(getmaintExpTotal(start,end));
-        pettyExpTotal = Float.parseFloat(getpettyExpTotal(start,end));
-        otherExpTotal = Float.parseFloat(getotherExpTotal(start,end));
-        taxTotal = Float.parseFloat(gettaxTotal(start,end));
-        disAllowedTotal = Float.parseFloat(disAllowedTOT(start,end));
-        
-        
-        
-    }
+
     private String getAdminExpTotal(String start, String end){
         String AdminExpTotal = null;
         
@@ -234,17 +288,46 @@ public class incomestatement {
         } 
     }  
     
-    private String disReceivedToT(String start, String end){
-        String disRe = null;
+    private float disReceivedToT(String start, String end){
+        float disRe =0;
         
         return disRe;
     }
     
-    private String OtherIncomesToT(String start, String end){
-        String otherIncome = null;
+  private float getOtherIncomes(String start,String end){
+    float OtherIncomeTOT=0.0f;
+    
+     con = DBconnect.connect();
+    
+    try{
+        String sql="SELECT SUM(`Amount`) FROM otherentries WHERE `Category`='Other Incomes' AND `Date` >= any (SELECT `Date` FROM `otherentries` WHERE `Date` >= '"+start+"') AND `Date` <= any (SELECT `Date` FROM `otherentries` WHERE `Date` <= '"+end+"')";
+        pst = con.prepareStatement(sql);
+        rs = pst.executeQuery();
         
-        return otherIncome;
+        OtherIncomeTOT = Float.parseFloat(rs.getString(sql));
+        return OtherIncomeTOT;
     }
+    catch (Exception e){
+        System.out.println(e);
+        return OtherIncomeTOT;
+    }
+    
+    
+}
+   private String getCurrentDate(){
+        
+        String date1;
+        
+        Date date = new Date();
+        
+       SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        date1 = formatter.format(date);
+        
+        System.out.println(date1);
+        
+        return date1;
+    }
+ 
     private String getStartDateFormat(String start){
      
      //String SDate = this.jDateChooser1.getDate().toString();
