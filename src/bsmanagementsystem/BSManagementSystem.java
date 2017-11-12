@@ -5,6 +5,8 @@
  */
 package bsmanagementsystem;
 
+import classes.financial.financialposition;
+import classes.financial.incomestatement;
 import itp.project.x.Interfaces.login;
 
 /**
@@ -20,8 +22,23 @@ public class BSManagementSystem {
         
         new login().setVisible(true);
         
+        
+        
         //new MainPage().setVisible(true);
         // TODO code application logic here
     }
-    
+   /* 
+ private void calculationsForStatements(){
+     
+     incomestatement inc = new incomestatement();
+     financialposition finpos = new financialposition();
+     
+     boolean status1, status2, status3;
+     
+     status1 = inc.initiate(start, end);
+     status2 = finpos.initiate(start, end);
+     status3 = initiate(start, end);
+     
+ }   
+    */
 }

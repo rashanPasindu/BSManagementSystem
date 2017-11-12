@@ -165,18 +165,18 @@ public class Finance extends javax.swing.JInternalFrame {
 
         if (n == 0){
             //show the relevant report
-            income.initiate(title, title);
+            //.initiate(title, title);
         }
         else if (n == 1){
             //show the relevant report
-            income.initiate(title, title);
+           // income.initiate(title, title);
         }
         else if (n == 2){
             //show the relevant report
-             income.initiate(title, title);
+             //income.initiate(title, title);
         }
         else if (n== 3){
-            income.initiate(title, title);
+            //income.initiate(title, title);
              //show the relevant report
         }
         else{
@@ -193,19 +193,19 @@ public class Finance extends javax.swing.JInternalFrame {
         n = chkQuater();
 
         if (n == 0){
-            finpo.initiate(title, title);
+            //finpo.initiate(title, title);
             //show the relevant report
         }
         else if (n == 1){
-            finpo.initiate(title, title);
+            //finpo.initiate(title, title);
             //show the relevant report
         }
         else if (n == 2){
-            finpo.initiate(title, title);
+            //finpo.initiate(title, title);
             //show the relevant report
         }
         else if (n== 3){
-            finpo.initiate(title, title);
+            //finpo.initiate(title, title);
             //show the relevant report
         }
         else{

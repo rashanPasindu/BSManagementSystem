@@ -8,6 +8,7 @@ package itp.project.x.Interfaces;
 import DBConnect.DBconnect;
 import bsmanagementsystem.MainPage;
 import classes.User;
+import classes.holdtheUsername;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,6 +26,7 @@ public class login extends javax.swing.JFrame {
      PreparedStatement pst=null;
      ResultSet rs=null;
      public String UserName;
+     public String nameUser=null;
     
     public login() {
         initComponents();
@@ -147,8 +149,8 @@ public class login extends javax.swing.JFrame {
              System.out.println(rs.getString("username")+" : " + rs.getString("accesslevel")); 
              UserName = rs.getString("username");
              System.out.println(UserName);
-             new MainPage().setUSerName(UserName);
-                 
+          
+             new holdtheUsername().tranferUSername(user.getText());      
                  m.setVisible(true);
                  this.dispose();
              //setVisible(false);
@@ -157,7 +159,7 @@ public class login extends javax.swing.JFrame {
                  
                  
                  m.setVisible(true);
-                 this.dispose();
+                 this.setDefaultCloseOperation(HIDE_ON_CLOSE);
                 //Add_Product_Images adImage=new Add_Product_Images();
                 //adImage.setVisible(true);
 
@@ -297,4 +299,5 @@ public class login extends javax.swing.JFrame {
     public javax.swing.JPasswordField password;
     public javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
+
 }

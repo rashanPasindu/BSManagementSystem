@@ -9,6 +9,7 @@ import Interface.HRM;
 import Interfaces.v_AddProducts;
 import Interfaces.v_InventoryHandlingMain;
 import bill.Payment;
+import classes.holdtheUsername;
 
 import interfa.RESource1;
 import interfa.REsource;
@@ -200,9 +201,9 @@ public class MainPage extends javax.swing.JFrame {
         jLabel2.setName(""); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(1366, 768));
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1370, 770);
+        jLabel2.setBounds(0, 0, 1366, 770);
 
-        setSize(new java.awt.Dimension(1384, 815));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -273,11 +274,15 @@ public class MainPage extends javax.swing.JFrame {
     
     private void setUser(){
         
-        login log = new login();
+        holdtheUsername log = new holdtheUsername();
         
-        log.jButton2.addActionListener((ActionEvent e) -> {
-         jLabel4.setText(user);
-    });
+        String user = log.getUsername();
+        if (user !=null){
+        jLabel4.setText(user);
+        }
+        else{
+            jLabel4.setText("Usr");
+        }
     }
     /**
      * @param args the command line arguments
