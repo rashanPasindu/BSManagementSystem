@@ -5,6 +5,7 @@
  */
 package hard1;
 
+import DBConnect.DBconnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -125,7 +126,7 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         });
         getContentPane().add(conform2_updatesuppliers1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 140, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/subbg.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_images/subbg.jpeg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -9, 410, 150));
 
         pack();

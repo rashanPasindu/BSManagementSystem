@@ -6,18 +6,15 @@
 package bsmanagementsystem;
 
 import Interface.HRM;
-import Interfaces.v_AddProducts;
 import Interfaces.v_InventoryHandlingMain;
 import bill.Payment;
 import classes.holdtheUsername;
+import hard1.order_reports;
 
 import interfa.RESource1;
-import interfa.REsource;
-import interfaces_hard.supplirs;
 import itp.project.x.Interfaces.OrderProsecessing;
 import itp.project.x.Interfaces.Product_Lookup;
 import itp.project.x.Interfaces.login;
-import java.awt.event.ActionEvent;
 
 /**
  *
@@ -223,7 +220,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       supplirs sup = new supplirs();
+       order_reports sup = new order_reports();
        
        sup.setVisible(true);
        this.dispose();
