@@ -71,7 +71,6 @@ public class incomestatement {
         disReceivedTotal=disReceivedToT(start,end);
         
         date=getCurrentDate();
-     
     }
    
    private boolean sendtoDB(float salesTOT,float otherIncomes,float discountsR, float adminExp,float MaintExp, float PettyExp, float OtherExp, float discountsA, String date){
@@ -111,11 +110,17 @@ public class incomestatement {
     private void calculatePBT(){
         
         profitBeforeTax = incomeTotal - expTotal;
+        
+        cashFlow cash = new cashFlow();
+        
+        cash.getLoss(profitBeforeTax);
+        cash.getOperatingIncome(profitBeforeTax);
     }
     
     private void calculatePAT(){
         
         profitAfterTax = profitBeforeTax - taxTotal;
+        
     }
     
     private void calculateExpTotal(){
