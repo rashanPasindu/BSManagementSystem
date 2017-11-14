@@ -100,7 +100,7 @@ public class cashFlow {
         previousReceivables = Float.parseFloat(rs.getString(sql));
        }
        catch(Exception e){
-           System.out.println(e); //one
+           System.out.println(e); //one2
        }
    }
 }
