@@ -40,6 +40,7 @@ public class cashFlow {
     float begining_Cash_Balance = 0;
     float s_cash_Balance = 0;
     
+    
     void getOperatingIncome(float value){
         
         operatingIncome = value;
