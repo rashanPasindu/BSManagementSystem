@@ -9,7 +9,7 @@ import Interface.HRM;
 import Interfaces.v_InventoryHandlingMain;
 import bill.Payment;
 import classes.holdtheUsername;
-import hard1.order_reports;
+import suppliers.order_reports;
 
 import interfa.RESource1;
 import itp.project.x.Interfaces.OrderProsecessing;
@@ -220,10 +220,9 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       order_reports sup = new order_reports();
-       
-       sup.setVisible(true);
-       this.dispose();
+      order_reports or= new order_reports();
+       or.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

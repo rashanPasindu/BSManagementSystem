@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hard1;
+package suppliers;
 
-import DBConnect.DBconnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -120,9 +119,9 @@ public class suppliersx extends javax.swing.JFrame {
         supplierid_update = new javax.swing.JTextField();
         update_sname = new javax.swing.JTextField();
         update_sNIC = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1366, 751));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Trajan Pro", 1, 24)); // NOI18N
@@ -130,7 +129,7 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel2.setText("ADD SUPPLIERS");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 220, -1));
 
-        supplierid_update1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        supplierid_update1.setText("aa");
         getContentPane().add(supplierid_update1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 60, 20));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -271,7 +270,7 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel11.setText("SUPPLIERS");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 130, 180, 20));
 
-        update_sNIC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        update_sNIC1.setText("aa");
         getContentPane().add(update_sNIC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 470, 150, 20));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -302,7 +301,7 @@ public class suppliersx extends javax.swing.JFrame {
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
         getContentPane().add(update_companyname, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 520, 220, -1));
 
-        update_sname1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        update_sname1.setText("aa");
         getContentPane().add(update_sname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 290, 20));
 
         jButton1.setText("UPDATE");
@@ -350,9 +349,6 @@ public class suppliersx extends javax.swing.JFrame {
         getContentPane().add(supplierid_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 70, -1));
         getContentPane().add(update_sname, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 270, -1));
         getContentPane().add(update_sNIC, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 430, 150, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_images/subbg.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1390, 770));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -489,7 +485,6 @@ public class suppliersx extends javax.swing.JFrame {
     private javax.swing.JTextField companycontact_int;
     private javax.swing.JTextField companyname;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

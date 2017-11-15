@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hard1;
+package supplier_management_system;
 
 /**
  *
@@ -80,7 +80,7 @@ public class reports extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 1230, 470));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_images/subbg.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/subbg.jpeg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -1, 1380, 760));
 
         pack();

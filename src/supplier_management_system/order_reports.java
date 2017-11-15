@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hard1;
+package supplier_management_system;
 
 /**
  *
@@ -39,6 +39,7 @@ public class order_reports extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1300, 700));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -106,7 +107,7 @@ public class order_reports extends javax.swing.JFrame {
         jLabel3.setText("----------RE-ORDER LEVEL----------");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_images/mainbg.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/mainbg.jpeg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1290, 760));
 
         pack();

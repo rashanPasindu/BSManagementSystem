@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hard1;
+package supplier_management_system;
 
-import DBConnect.DBconnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -132,6 +131,7 @@ public class order_items extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("ORDERS");
+        setPreferredSize(new java.awt.Dimension(1366, 750));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
@@ -396,7 +396,7 @@ public class order_items extends javax.swing.JFrame {
         });
         getContentPane().add(combox_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 230, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_images/subbg.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/subbg.jpeg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-29, -7, 1400, 800));
 
         pack();
