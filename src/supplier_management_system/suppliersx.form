@@ -49,6 +49,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="aa"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -351,10 +352,11 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="aa"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="960" y="470" width="150" height="20"/>
+          <AbsoluteConstraints x="980" y="460" width="140" height="20"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -469,6 +471,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="aaa"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -584,12 +587,12 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/supplier_images/subbg.jpeg"/>
+          <Image iconType="3" name="/supplier_management_system/subbg.jpeg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="-10" y="-10" width="1390" height="770"/>
+          <AbsoluteConstraints x="0" y="0" width="1390" height="770"/>
         </Constraint>
       </Constraints>
     </Component>

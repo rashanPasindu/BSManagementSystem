@@ -107,8 +107,9 @@ public class order_reports extends javax.swing.JFrame {
         jLabel3.setText("----------RE-ORDER LEVEL----------");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/mainbg.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1290, 760));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/mainbg.jpeg"))); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(1270, 700));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1290, 780));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

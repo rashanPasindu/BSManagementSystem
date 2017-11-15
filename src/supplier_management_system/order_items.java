@@ -148,6 +148,7 @@ public class order_items extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, -1, -1));
 
         discription_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        discription_label.setText("aa");
         getContentPane().add(discription_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 320, 470, 60));
 
         jScrollPane1.setViewportView(discription);
@@ -246,6 +247,7 @@ public class order_items extends javax.swing.JFrame {
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
 
         items_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        items_label.setText("aa");
         getContentPane().add(items_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 390, 20));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -381,6 +383,7 @@ public class order_items extends javax.swing.JFrame {
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, -1, -1));
 
         supplier_update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
+        supplier_update.setText("aa");
         getContentPane().add(supplier_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 320, 110, 20));
 
         combox_supplier.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -396,8 +399,8 @@ public class order_items extends javax.swing.JFrame {
         });
         getContentPane().add(combox_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 230, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/subbg.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-29, -7, 1400, 800));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbg.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
