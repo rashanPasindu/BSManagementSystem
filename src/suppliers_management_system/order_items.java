@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package supplier_management_system;
+package suppliers_management_system;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import net.proteanit.sql.DbUtils;
 
 /**
  *
@@ -30,6 +31,25 @@ public class order_items extends javax.swing.JFrame {
         con = DBconnect.connect();
         loadSupppliers();
         combox_supplier.setSelectedIndex(0);
+        tableload3();
+        
+    }
+    
+    public void tableload3()
+    {
+        try {
+            
+       String sqlp_item="SELECT POrderID, Suplier, Item, Description FROM pending orde";
+       PreparedStatement pst = con.prepareStatement(sqlp_item);
+       rs=pst.executeQuery();
+       table_pending_order.setModel(DbUtils.resultSetToTableModel(rs));
+       
+       
+        } 
+        catch (Exception e) {
+        }
+    
+    
         
     }
     
@@ -83,7 +103,7 @@ public class order_items extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         discription = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        table_pending_order = new javax.swing.JTable();
         jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
@@ -154,7 +174,7 @@ public class order_items extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 230, 60));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        table_pending_order.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -165,7 +185,7 @@ public class order_items extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(table_pending_order);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 860, 200));
 
@@ -396,8 +416,8 @@ public class order_items extends javax.swing.JFrame {
         });
         getContentPane().add(combox_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 230, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbbbbb.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1390, 770));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_management_system/subbbbbb.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1400, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -480,12 +500,15 @@ public class order_items extends javax.swing.JFrame {
         String orderdiscription=discription.getText();
         
         try {
-       String q2= "INSERT INTO pending orde (POrderID, Suplier, Item, Description) values('"+supplier+"', '"+oitems+"', '"+orderdiscription+"')";
+       String q2= "INSERT INTO pending orde (Suplier, Item, Description) values('"+supplier+"', '"+oitems+"', '"+orderdiscription+"')";
        PreparedStatement pst = con.prepareStatement(q2);
-       pst.execute();
+       pts.execute();
+       
+       //tableload3();
             
         } catch (Exception e) {
         }
+        
         
         
         
@@ -579,7 +602,6 @@ public class order_items extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JLabel label_email1;
     private javax.swing.JButton order_button;
@@ -591,5 +613,6 @@ public class order_items extends javax.swing.JFrame {
     private javax.swing.JTextField search_oID;
     private javax.swing.JButton search_oid_button;
     private javax.swing.JLabel supplier_update;
+    private javax.swing.JTable table_pending_order;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package supplier_management_system;
+package suppliers_management_system;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -109,16 +109,13 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         update_companyname = new javax.swing.JTextField();
-        update_sname1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         re_order_table1 = new javax.swing.JButton();
         bsck_to_home1 = new javax.swing.JButton();
-        supplierid_update = new javax.swing.JTextField();
-        update_sname = new javax.swing.JTextField();
-        update_sNIC = new javax.swing.JTextField();
+        update_sname1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -130,29 +127,29 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel2.setText("ADD SUPPLIERS");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 220, -1));
 
-        supplierid_update1.setText("aa");
-        getContentPane().add(supplierid_update1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 60, 20));
+        supplierid_update1.setText(".");
+        getContentPane().add(supplierid_update1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, 60, 20));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 255, 255));
         jLabel6.setText("SUPPLIER NAME:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 430, -1, -1));
 
         update_supcontact.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 update_supcontactActionPerformed(evt);
             }
         });
-        getContentPane().add(update_supcontact, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 520, 300, -1));
+        getContentPane().add(update_supcontact, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 290, -1));
         getContentPane().add(supplieremail, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 220, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("SUPPLIER EMAIL:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("COMPANY CONTACT NUMBER:");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 500, -1, -1));
 
         companycontact_int.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,11 +167,11 @@ public class suppliersx extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("SUPPLIER CONTACT:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 500, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("COMPANY NAME:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 500, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 500, -1, -1));
 
         companyname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,7 +190,7 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 255, 255));
         jLabel3.setText("SUPPLIER NIC:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 430, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, -1, -1));
 
         re_order_table.setText("REPORTS");
         re_order_table.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +203,7 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(204, 255, 255));
         jLabel9.setText("SUPPLIER ID:");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 100, 20));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 100, 20));
 
         table_view_suppliers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -219,6 +216,11 @@ public class suppliersx extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        table_view_suppliers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                table_view_suppliersMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(table_view_suppliers);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, 740, 230));
@@ -262,6 +264,11 @@ public class suppliersx extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        table_edit_suppliers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                table_edit_suppliersMouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(table_edit_suppliers);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 550, 1240, 140));
@@ -271,8 +278,8 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel11.setText("SUPPLIERS");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 130, 180, 20));
 
-        update_sNIC1.setText("aa");
-        getContentPane().add(update_sNIC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 470, 150, 20));
+        update_sNIC1.setText(".");
+        getContentPane().add(update_sNIC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 430, 150, 20));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("SUPPLIER NAME:");
@@ -286,12 +293,12 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel15.setText("COMPANY CONTACT NUMBER:");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
-        getContentPane().add(update_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, 170, -1));
+        getContentPane().add(update_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, 220, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel16.setText("SUPPLIER CONTACT:");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
-        getContentPane().add(update_companycontact_int, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 520, 160, -1));
+        getContentPane().add(update_companycontact_int, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 520, 180, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("COMPANY NAME:");
@@ -300,10 +307,7 @@ public class suppliersx extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("SUPPLIER NIC:");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
-        getContentPane().add(update_companyname, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 520, 220, -1));
-
-        update_sname1.setText("aa");
-        getContentPane().add(update_sname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 460, 290, 20));
+        getContentPane().add(update_companyname, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 520, 380, -1));
 
         jButton1.setText("UPDATE");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -311,7 +315,7 @@ public class suppliersx extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 420, 150, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 420, 140, 30));
 
         jLabel12.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -342,17 +346,11 @@ public class suppliersx extends javax.swing.JFrame {
         });
         getContentPane().add(bsck_to_home1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 60, 210, 30));
 
-        supplierid_update.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                supplierid_updateActionPerformed(evt);
-            }
-        });
-        getContentPane().add(supplierid_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 70, -1));
-        getContentPane().add(update_sname, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 270, -1));
-        getContentPane().add(update_sNIC, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 430, 150, -1));
+        update_sname1.setText(".");
+        getContentPane().add(update_sname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 420, 300, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbbbbb.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1380, 730));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_management_system/subbbbbb.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -429,9 +427,9 @@ public class suppliersx extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        int supplieID=Integer.parseInt(supplierid_update.getText());
-        String supplierName=update_sname.getText();
-        String nic=update_sNIC.getText();
+        int supplieID=Integer.parseInt(supplierid_update1.getText());
+        String supplierName=update_sname1.getText();
+        String nic=update_sNIC1.getText();
         int company_contact=Integer.parseInt(update_companycontact_int.getText());
         String supplier_contact=update_supcontact.getText();
         String company_name=update_companyname.getText();
@@ -439,12 +437,42 @@ public class suppliersx extends javax.swing.JFrame {
 
         conform_suppliers_update b3 = new conform_suppliers_update(supplieID, supplierName, nic, company_contact, supplier_contact, company_name, supplier_email);
         b3.setVisible(true);
+        
+        this.dispose();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void supplierid_updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierid_updateActionPerformed
+    private void table_view_suppliersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_view_suppliersMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_supplierid_updateActionPerformed
+    }//GEN-LAST:event_table_view_suppliersMouseClicked
+
+    private void table_edit_suppliersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_edit_suppliersMouseClicked
+        int row=table_edit_suppliers.getSelectedRow();
+        
+        String supplier_id1=table_edit_suppliers.getValueAt(row, 0).toString();
+        String supplier_name1=table_edit_suppliers.getValueAt(row, 1).toString();
+        String supplier_email1=table_edit_suppliers.getValueAt(row, 2).toString();
+        String supplier_contact1=table_edit_suppliers.getValueAt(row, 3).toString();
+        String company_contact1=table_edit_suppliers.getValueAt(row, 4).toString();
+        String company_name1=table_edit_suppliers.getValueAt(row, 5).toString();
+        String supplier_nic=table_edit_suppliers.getValueAt(row, 6).toString();
+        
+        supplierid_update1.setText(supplier_id1);
+        update_sname1.setText(supplier_name1);
+        update_email.setText(supplier_email1);
+        update_supcontact.setText(supplier_contact1);
+        update_companycontact_int.setText(company_contact1);
+        update_companyname.setText(company_name1);
+        update_sNIC1.setText(supplier_nic);
+        
+        tableload();
+        tableload1();
+        
+        
+        
+                
+                
+    }//GEN-LAST:event_table_edit_suppliersMouseClicked
 
     /**
      * @param args the command line arguments
@@ -516,7 +544,6 @@ public class suppliersx extends javax.swing.JFrame {
     private javax.swing.JButton re_order_table1;
     private javax.swing.JTextField suppliercontact;
     private javax.swing.JTextField supplieremail;
-    private javax.swing.JTextField supplierid_update;
     private javax.swing.JLabel supplierid_update1;
     private javax.swing.JTextField suppliername;
     private javax.swing.JTextField suppliernic;
@@ -525,9 +552,7 @@ public class suppliersx extends javax.swing.JFrame {
     private javax.swing.JTextField update_companycontact_int;
     private javax.swing.JTextField update_companyname;
     private javax.swing.JTextField update_email;
-    private javax.swing.JTextField update_sNIC;
     private javax.swing.JLabel update_sNIC1;
-    private javax.swing.JTextField update_sname;
     private javax.swing.JLabel update_sname1;
     private javax.swing.JTextField update_supcontact;
     // End of variables declaration//GEN-END:variables

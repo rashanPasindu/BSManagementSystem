@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suppliers;
+package suppliers_management_system;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -39,6 +39,9 @@ public class conform_suppliers_update extends javax.swing.JFrame {
     public conform_suppliers_update() {
         initComponents();
         con=DBconnect.connect();
+        
+        tableload();
+        tableload1();
     }
     
    /* public  conform_suppliers_update(int supplirID, String supplierName, String nic,int Comp_contact, String supp_contact,String comp_name,String supp_email){
@@ -57,6 +60,8 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         this.supplier_contact = supplier_contact;
         this.company_name = company_name;
         this.supplier_email = supplier_email;
+        
+        
     }
     
 
@@ -76,6 +81,7 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         user_name = new javax.swing.JTextField();
         conform2_updatesuppliers = new javax.swing.JButton();
         conform2_updatesuppliers1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WARNING !!!");
@@ -124,6 +130,9 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         });
         getContentPane().add(conform2_updatesuppliers1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 140, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/suppliers_management_system/subbbbbb.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 400, 160));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -150,12 +159,22 @@ public class conform_suppliers_update extends javax.swing.JFrame {
           pst=con.prepareStatement(query);  
           rs=pst.executeQuery();
           
+            
+          
           
           if(rs.next()){
               this.query="UPDATE `supplier` SET `supplier_Name`='"+this.supplierName+"',`supplier_email`='"+this.supplier_email+"',`contact_perspn`='"+this.supplier_contact+"',`contact_tel_number`='"+this.company_contact+"',`CompanyName`='"+this.company_name+"',`SupNIC`='"+this.nic+"' WHERE supplier_Id ='"+this.supplieID+"'";
               pst=con.prepareStatement(query);  
                pst.executeUpdate();
+               
+              
+               suppliersx sx=new suppliersx();
+               sx.setVisible(true);
                this.dispose();
+               
+        
+               
+               
           }
           else{
               JOptionPane.showMessageDialog(this, "Invlid Autountications");
@@ -165,7 +184,7 @@ public class conform_suppliers_update extends javax.swing.JFrame {
             Logger.getLogger(conform_suppliers_update.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        
+       
                 
         
     }//GEN-LAST:event_conform2_updatesuppliers1ActionPerformed
@@ -209,10 +228,19 @@ public class conform_suppliers_update extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton conform2_updatesuppliers;
     private javax.swing.JButton conform2_updatesuppliers1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField password_field;
     private javax.swing.JTextField user_name;
     // End of variables declaration//GEN-END:variables
+
+    private void tableload() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void tableload1() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
