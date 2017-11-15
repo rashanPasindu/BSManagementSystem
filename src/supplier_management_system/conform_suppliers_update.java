@@ -69,7 +69,6 @@ public class conform_suppliers_update extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -77,9 +76,7 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         user_name = new javax.swing.JTextField();
         conform2_updatesuppliers = new javax.swing.JButton();
         conform2_updatesuppliers1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/subbg.jpeg"))); // NOI18N
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WARNING !!!");
@@ -128,8 +125,8 @@ public class conform_suppliers_update extends javax.swing.JFrame {
         });
         getContentPane().add(conform2_updatesuppliers1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 140, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbg.jpeg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 410, 150));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbbbbb.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 410, 150));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -220,7 +217,6 @@ public class conform_suppliers_update extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPasswordField password_field;
     private javax.swing.JTextField user_name;
     // End of variables declaration//GEN-END:variables

@@ -73,9 +73,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="discription_label">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="aa"/>
       </Properties>
       <Constraints>
@@ -317,9 +314,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="items_label">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="aa"/>
       </Properties>
       <Constraints>
@@ -640,9 +634,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="supplier_update">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="aa"/>
       </Properties>
       <Constraints>
@@ -675,12 +666,12 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/supplier_management_system/subbg.jpeg"/>
+          <Image iconType="3" name="/supplier_management_system/subbbbbb.jpeg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="1400" height="800"/>
+          <AbsoluteConstraints x="-10" y="-10" width="1390" height="770"/>
         </Constraint>
       </Constraints>
     </Component>

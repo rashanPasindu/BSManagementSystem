@@ -147,7 +147,6 @@ public class order_items extends javax.swing.JFrame {
         jLabel6.setText("SUPPLIER:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, -1, -1));
 
-        discription_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
         discription_label.setText("aa");
         getContentPane().add(discription_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 320, 470, 60));
 
@@ -246,7 +245,6 @@ public class order_items extends javax.swing.JFrame {
         jLabel17.setText("DISCRIPTION:");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
 
-        items_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
         items_label.setText("aa");
         getContentPane().add(items_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 390, 20));
 
@@ -382,7 +380,6 @@ public class order_items extends javax.swing.JFrame {
         jLabel8.setText("RE-MARKS:");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, -1, -1));
 
-        supplier_update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_images/Flag_of_county_Kildare_-_bordered.svg.png"))); // NOI18N
         supplier_update.setText("aa");
         getContentPane().add(supplier_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 320, 110, 20));
 
@@ -399,8 +396,8 @@ public class order_items extends javax.swing.JFrame {
         });
         getContentPane().add(combox_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 230, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbg.jpeg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 800));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/supplier_management_system/subbbbbb.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1390, 770));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
